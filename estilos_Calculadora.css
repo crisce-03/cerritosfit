@@ -103,9 +103,15 @@ legend{
 
 .tam_input:focus,
 .tam_input:valid,
-.tam_input:invalid {
-    background-color: transparent;
+.tam_input:invalid,
+.tam_input:-webkit-autofill {
+    background-color: transparent ; /* Importante para sobreescribir otros estilos */
+    -webkit-box-shadow: 0 0 0px 1000px #001011 inset; /* Para evitar autofill background en algunos navegadores */
+    box-shadow: 0 0 0px 1000px #001011 inset ; /* Para evitar autofill background en algunos navegadores */
+    color: #3AAFB9;
+    -webkit-text-fill-color: #3AAFB9 ; /* Para mantener el color del texto en autofill */
 }
+
 
 .label_info{
 
