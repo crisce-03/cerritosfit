@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculadora de Calorias</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-widht">
+
+        <link rel="stylesheet" href="estilos_Calculadora.css">
+
+        
+
+    </head>
+    <body>
+
+        <header>
+            <h1>CALCULADORA DE CALORIAS</h1>
+        </header>
+
+        <main>
+            <p>
+                Esta Calculadora te permitira saber cuantas 
+                <strong>calorias gastas diariamente</strong>,
+                Utilizando la formula de Harris-Benedict,
+                que es la mas utilizada en la actualidad.
+            </p>
+
+            <section>
+                <form class="formulario">
+                    <fieldset class="cuadro_Formulario"> 
+                        <h2 >
+                            Ingresa tus datos:<br>
+                        </h2>
+                       
+                        <div class="tam_select_img">   
+                            <label for="sexo">Sexo:</label><br>
+                            <div class="sexos">
+                                
+                                <input type="radio" name="sexos" id="sexo1"  required>  
+                                    <label for="sexo1" >
+                                        <img src="../imagenes/hombre.png" alt="Masculino">
+                                    </label>
+                                <input type="radio" name="sexos" id="sexo2"  required >
+                                    <label for="sexo2">
+                                        <img src="../imagenes/mujer.png" alt="Femenino">
+                                    </label>
+                            </div>                      
+                                       
+                        </div>
+                        <br>
+
+                        <div>
+                            <input type="text" name="edad" id="edad" class="tam_input" required>
+                            <label for="edad" class="label_info"> 
+                                <span style="transition-delay:0ms">E</span>
+                                <span style="transition-delay:50ms">d</span>
+                                <span style="transition-delay:100ms">a</span>
+                                <span style="transition-delay:150ms">d</span>
+                                <span style="transition-delay:200ms">(</span>
+                                <span style="transition-delay:250ms">a</span>
+                                <span style="transition-delay:300ms">ñ</span>
+                                <span style="transition-delay:350ms">o</span>
+                                <span style="transition-delay:400ms">s</span>
+                                <span style="transition-delay:450ms">)</span>
+                            </label>   
+                        </div>
+                        <br>
+
+                        <div>
+                            <input type="text" class="tam_input" name="peso" id="peso"  required>
+                            <label for="peso" class="label_info">
+                                <span style="transition-delay:0ms">P</span>
+                                <span style="transition-delay:50ms">e</span>
+                                <span style="transition-delay:100ms">s</span>
+                                <span style="transition-delay:150ms">o</span>
+                                <span style="transition-delay:200ms">(</span>
+                                <span style="transition-delay:250ms">K</span>
+                                <span style="transition-delay:300ms">g</span>
+                                <span style="transition-delay:350ms">)</span>
+                            </label>
+                            
+                        </div>
+                        <br>
+
+                        <div>
+                            <input type="text" class="tam_input" name="altura" id="altura"  required>
+                            <label for="altura" class="label_info">
+                                <span style="transition-delay:0ms">A</span>
+                                <span style="transition-delay:50ms">l</span>
+                                <span style="transition-delay:100ms">t</span>
+                                <span style="transition-delay:150ms">u</span>
+                                <span style="transition-delay:200ms">r</span>
+                                <span style="transition-delay:250ms">a</span>
+                                <span style="transition-delay:300ms">(</span>
+                                <span style="transition-delay:350ms">c</span>
+                                <span style="transition-delay:400ms">m</span>
+                                <span style="transition-delay:450ms">)</span>
+                            </label>
+                        </div>
+                        <br>
+
+                        <div>
+                            <label for="actividad">Nivel de Actividad Fisica Diaria:</label><br>
+                            <select name="actividad" id="actividad" class="tam_select" required>
+                                <option value="" selected disabled>Selecciona una opción</option>
+                                <option value="actividad1">Sedentario (poco o ningún ejercicio)</option>
+                                <option value="actividad2">Ligeramente activo (ejercicio ligero/sports 1-3 días a la semana)</option>
+                                <option value="actividad3">Moderadamente activo (ejercicio moderado/sports 3-5 días a la semana)</option>
+                                <option value="actividad4">Muy activo (ejercicio intenso/sports 6-7 días a la semana)</option>
+                                <option value="actividad5">Extra activo (trabajo físico muy duro o entrenamiento dos veces al día)</option>
+                            </select>
+                        </div>
+                        <br>
+
+                        <div>
+                            <label for="objetivo">Objetivo:</label><br>
+                                <select name="objetivo" id="objetivo" class="tam_select" required>
+                                    <option value="" selected disabled>Selecciona una opción</option>
+                                    <option value="objetivo1">Ganar Masa Muscular</option>
+                                    <option value="objetivo2">Mantener Peso Corporal</option>
+                                    <option value="objetivo3">Bajar Grasa Corporal</option>
+
+                                </select>
+                            
+                        </div>
+                        <br>
+
+                        <div>
+                            <button id="calcular">Calcular</button>
+                        </div>
+                    </fieldset>
+                </form>
+
+                
+            </section>
+        </main>  
+        <script src="main.js"></script>
+    </body>
+</html>
